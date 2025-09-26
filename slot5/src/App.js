@@ -1,7 +1,8 @@
 // src/App.js
 import React from "react";  
 import Exercise1 from "./components/Exercise1";  
-import { exercise2 as Exercise2 } from "./components/Exercise2";
+import Exercise2 from "./components/Exercise2";
+
 
 
 function App() {

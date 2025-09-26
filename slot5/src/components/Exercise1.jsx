@@ -15,7 +15,7 @@ export default function Exercise1() {
         }
     } = person;
 
-    const age = [33,12,20,16];
+    const ages = [33,12,20,16];
 
     const [first,,third = 0, ...restAges] = ages;
     
@@ -31,7 +31,7 @@ export default function Exercise1() {
       <p>Bài 4</p>
       <p>First: {first}</p>
       <p>Third: {third}</p>
-      <p>RestAges: {restAges}</p>
+        <p>RestAges: {JSON.stringify(restAges)}</p>
 
     </div>
   );
