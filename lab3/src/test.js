@@ -39,12 +39,14 @@ console.log("sum(1,2,3)            =", sum(1,2,3));
 console.log("sum(1,'x',4)          =", sum(1,'x',4));
 console.log("avg(1,2,3,4)          =", avg(1,2,3,4));
 console.log("avg()                  =", avg());
+
 const {
   address: { street, city = "Unknown City" }
 } = person;
 
 console.log("street:", street);
 console.log("city:", city);
+
 const [first, , third = 0, ...restAges] = [33, 12, 20, 16];
 console.log("first:", first, "| third:", third, "| restAges:", restAges);
 const people = [

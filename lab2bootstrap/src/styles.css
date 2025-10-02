@@ -1,0 +1,78 @@
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+/* Nền tối cho các section dưới hero */
+.section-dark {
+  background: #2f2f2f;           /* xám đậm */
+  color: #fff;
+}
+
+/* Tiêu đề section ('Our Menu', 'Book Your Table') */
+.section-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 1.25rem;
+  font-size: 1.75rem;
+}
+
+/* Ảnh hero có chiều cao tương đối để giống banner */
+.hero-img {
+  max-height: 420px;
+  object-fit: cover;
+}
+
+/* Caption giữa ảnh, có nền mờ để dễ đọc như ảnh mẫu */
+.hero-caption {
+  bottom: 20%;
+  text-shadow: 0 2px 8px rgba(0,0,0,.6);
+}
+
+/* Card menu */
+.menu-img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Box booking rộng vừa phải ở giữa */
+.booking-width {
+  max-width: 960px;
+}
+
+/* Nút vàng giống ảnh */
+.btn-warnings {
+  background-color: red;
+  border-color: red;
+}
+.btn-warnings:hover {
+  filter: brightness(.92);
+}
+
+.btn-warning {
+  background-color: yellow;
+  border-color: black;
+}
+.btn-warning:hover {
+  filter: brightness(.92);
+}
+
+/* Card tiêu đề hơi đậm */
+.card-title {
+  font-weight: 600;
+}
+
+/* badge góc trên */
+.badge {
+  letter-spacing: .5px;
+}
+/* chiều cao banner + crop ảnh */
+.hero-img {
+  max-height: 420px;
+  object-fit: cover;
+}
+
+/* caption nằm giữa, có shadow để đọc dễ */
+.hero-caption {
+  bottom: 20%;
+  text-shadow: 0 2px 8px rgba(0,0,0,.6);
+}
+

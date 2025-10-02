@@ -33,7 +33,7 @@ export default function Exercise2() {
 
  
   // 6. Sort + slice – doanh nghiệp theo năm kết thúc
-  // (không mutate mảng gốc)
+
  
   const top3EndAsc = [...companies]
     .sort((a, b) => a.end - b.end)
@@ -41,7 +41,6 @@ export default function Exercise2() {
     .map((c) => `${c.name} - ${c.end}`);
 
   // 7. Spread vs. rest – bất biến & gộp mảng
-  // Tạo bản sao company0New với start += 1, không đổi companies[0]
   const company0New = { ...companies[0], start: companies[0].start + 1 };
 
   // Hàm gộp mảng bằng rest params
@@ -58,7 +57,7 @@ export default function Exercise2() {
     (acc, age) => {
       acc.total += age;
       if (age < acc.min) acc.min = age;
-      if (age > acc.max) acc.max = age;
+      if (age > acc.max) acc.max = age; 
       if (age >= 13 && age <= 19) acc.buckets.teen += 1;
       if (age >= 20) acc.buckets.adult += 1;
       return acc;
@@ -74,6 +73,8 @@ export default function Exercise2() {
   return (
     <div>
       <h2>Exercise2</h2>
+      <h2> In max </h2>
+      <p>Max: {stats.max}</p>
 
       {/* Bài 5 */}
       <section>
@@ -101,6 +102,7 @@ export default function Exercise2() {
         <p>
           companies[0]:{" "}
           {JSON.stringify(companies[0])}
+          
         </p>
         <p>
           company0New:{" "}
