@@ -1,0 +1,4 @@
+.movie-card-img {
+  height: 400px; /* Đặt một chiều cao cố định cho tất cả các ảnh */
+  object-fit: cover; /* Đây là thuộc tính quan trọng nhất */
+}
